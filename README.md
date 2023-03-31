@@ -30,25 +30,66 @@ Diff = A ⊕ B ⊕ Bin B = A'Bin + A'B + BBin
 
 
 Write the detailed procedure here 
+1.Use module project name(input,output) to start the Verilog programmming.
 
+2.Assign inputs and outputs using the word input and output respectively.
+
+3.Use defined keywords like wire,assign and required logic gates to represent the boolean expression.
+
+4.Use each output to represent one for difference and the other for borrow.
+
+5.End the verilog program using keyword endmodule.
 
 ## Program:
 /*
 Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: LAVANYA M
+RegisterNumber:  212222110021
 */
+HALF SUBTRACTOR
+module HalfSubtractor(A,B,Difference,Borrow);
+input A,B;
+output Difference,Borrow;
+assign Difference = (A^B);
+assign Borrow = (~A&B);
+endmodule
+
+FULL SUBTRACTOR
+module FullSubtractor(A,B,C,Difference,Borrow);
+input A,B,C;
+output Difference,Borrow;
+assign Difference = (A^B^C);
+assign Borrow = (~A&(B^C)|(B&C));
+endmodule
 
 ## Output:
-
 ## Truthtable
+
+HALF SUBTRACTOR:
+![image](https://user-images.githubusercontent.com/120103862/229188801-1eb8c546-55e3-421b-aa32-803b89fb3a38.png)
+
+FULL SUBTRACTOR:
+![Uploading image.png…]()
 
 
 
 ##  RTL realization
+HALF SUBTRACTOR
+![half subtractor diagram](https://user-images.githubusercontent.com/120103862/229188415-c87d831d-3a2f-4d38-8ab6-af560d7466dc.png)
+
+FULL SUBTRACTOR
+![fullsubtractor diagram](https://user-images.githubusercontent.com/120103862/229188495-0b61c733-3b45-4fc1-bc5d-4aec0caf93ca.png)
+
 
 
 ## Timing diagram 
+HALF SUBTRACTOR
+
+![half subtractor](https://user-images.githubusercontent.com/120103862/229188077-625e6496-f155-42e0-ad7f-01adc18d3c78.png)
+
+FULL SUBTRACTOR
+![full subtractor](https://user-images.githubusercontent.com/120103862/229188259-b5c2c7b0-7192-4892-b00e-c007d9fd153f.png)
+
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
