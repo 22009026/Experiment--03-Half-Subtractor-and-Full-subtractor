@@ -53,7 +53,7 @@ Developed by: LAVANYA M
 
 RegisterNumber:  212222110021
 
-*/
+
 HALF SUBTRACTOR
 module HalfSubtractor(A,B,Difference,Borrow);
 input A,B;
@@ -69,6 +69,7 @@ output Difference,Borrow;
 assign Difference = (A^B^C);
 assign Borrow = (~A&(B^C)|(B&C));
 endmodule
+
 */
 
 LOGIC GATES:
