@@ -62,14 +62,25 @@ assign Difference = (A^B^C);
 assign Borrow = (~A&(B^C)|(B&C));
 endmodule
 
-## Output:
+LOGIC GATES:
+
+Half subtractor:
+![image](https://user-images.githubusercontent.com/120103862/229358016-20147efc-f9e1-4d88-a715-3063f3249ff6.png)
+
+
+Full subtractor:
+![image](https://user-images.githubusercontent.com/120103862/229358036-cc9b6920-32b7-4a20-bd93-0cdfbfdcb0a9.png)
+
+
 ## Truthtable
 
 HALF SUBTRACTOR:
+
 ![image](https://user-images.githubusercontent.com/120103862/229188801-1eb8c546-55e3-421b-aa32-803b89fb3a38.png)
 
 FULL SUBTRACTOR:
-![Uploading image.png…]()
+
+![image](https://user-images.githubusercontent.com/120103862/229357836-9f1849e4-e1fe-45c4-bdfb-14a79b5d003c.png)
 
 
 
