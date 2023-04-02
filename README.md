@@ -71,8 +71,10 @@ assign Difference = (A^B^C);
 assign Borrow = (~A&(B^C)|(B&C));
 endmodule
 
-*/
+
 ```
+*/
+
 LOGIC GATES:
 
 Half subtractor:
